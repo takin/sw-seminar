@@ -1,0 +1,8 @@
+{
+	"folders":[
+		{
+			"path" : "./slide",
+			"file_exclude_pattern":"*.html"
+		}
+	]
+}

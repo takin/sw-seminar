@@ -1,0 +1,164 @@
+body {
+    background: -moz-radial-gradient(center, circle cover, rgba(250,250,250,.2) 0%, rgba(20,20,20,.4) 100%),url('/public/images/cover-bg-small.jpg');
+    background: -webkit-radial-gradient(center, circle cover, rgba(250,250,250,.2) 0%, rgba(20,20,20,.4) 100%),url('/public/images/cover-bg-small.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.reveal .slides section.present {
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(245,245,245,.4);
+    box-shadow: 0 25px 37px rgba(10,20,30,1);
+    padding-top: 0px;
+}
+.reveal .slides section.cover h3 {
+    background:none;
+}
+
+.reveal .slides section h3 {
+    background: linear-gradient(90deg, rgba(120,220,110,.6) 0%, rgba(145,240,113,.4) 25%, rgba(145,240,113,.3) 70%, rgba(130,180,70,.6) 105%);
+    border-radius: 5px 5px 0 0;
+    color: rgb(10,90,10);
+    text-shadow: 0 0 3px rgb(33,150,90);
+    padding: 15px;
+}
+
+.reveal .slides section.image-only {
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+.reveal .slides section img.img-floated-left {
+    float:left;
+    border: none;
+    padding:20px 0 0 20px;
+    margin: 0px;
+    box-shadow: none;
+}
+
+.reveal .slides section img {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.reveal .slides .full-image {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+.reveal .slides .full-image h3 {
+    text-align: center;
+    margin-bottom:0px;
+}
+.reveal .slides .full-image img {
+    max-width: 100%;
+    max-height: 100%;
+    margin:0px;
+    padding:0px;
+    position: relative;
+    width: 100%;
+    height: inherit;
+    z-index: 100;
+}
+.reveal .slides .full-image > div {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 556px;
+    z-index: 1000;
+    transform: 
+    border-radius: 0 0 5px 5px;
+    box-shadow: none;
+}
+
+.reveal .slides .full-image > div > div {
+    position: absolute;
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,0),rgba(255,255,255,0));
+    border-radius: 5px;
+/*     top: 80px; */
+    transform: scale(.5);
+    visibility: hidden;
+    left: 30px;
+    width: 90%;
+    z-index: 1001;
+    padding: 20px;
+    box-shadow: none;
+    background-attachment: fixed;
+    transition: all ease .8s;
+}
+
+.reveal .slides .full-image > div.visible > div {
+    top: 50px;
+    transform: scale(1);
+    visibility: visible;
+    background-attachment: fixed;
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,.7),rgba(255,255,255,.7)),url('/public/images/search-term-blur.png');
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,.7),rgba(255,255,255,.7)),url('/public/images/search-term-blur.png');
+    background: linear-gradient(0deg, rgba(255,255,255,.7),rgba(255,255,255,.7)),url('/public/images/search-term-blur.png');
+    background-size: 107%;
+    background-position: -33px -55px;
+}
+
+.reveal .slides .full-image ul > li {
+    margin-left: 50px;
+}
+
+.reveal .slides .full-image ul > li > ul li {
+    margin-left: 0px;
+}
+
+.reveal .slides ul > li.fragment,.reveal .slides ul > li.fragment > ul > li.fragment {
+    transform: scale(.7);
+    transition: all ease .8s;
+}
+
+.reveal .slides ul > li.fragment.visible,.reveal .slides ul > li.fragment > ul > li.fragment.visible {
+    transform: scale(1);
+}
+
+.reveal .slides section blockquote {
+    background: none;
+}
+.reveal .slides section blockquote.with-left-floated-image {
+    margin-left: 280px;
+    margin-right: 20px;
+    width: auto;
+    box-shadow: none;
+}
+.reveal .slides section .content-left {
+    text-align: left;
+}
+.green-color {
+    color: rgb(10,90,10);
+}
+.reveal .slides section .footnote {
+    font-size: 12px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.reveal .slides .fragment.highlight-red.visible {
+    text-shadow: 0 0 2px rgba(255,10,100,1);
+}
+
+.reveal .slides section > ul > li {
+    margin: 20px;
+}
+
+.reveal .slides section.stacked-slide {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+} 

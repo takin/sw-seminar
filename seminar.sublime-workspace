@@ -1,0 +1,582 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"body",
+				"bodyBg"
+			],
+			[
+				"cove",
+				"cover-bg-small"
+			],
+			[
+				"image",
+				"imagesPath"
+			],
+			[
+				"ima",
+				"imagesPath"
+			],
+			[
+				"section",
+				"sectionBg"
+			],
+			[
+				"secti",
+				"sectionBg"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"rotat",
+				"rotateX"
+			],
+			[
+				"sensorData",
+				"sensorData"
+			],
+			[
+				"sensorDat",
+				"sensorData"
+			],
+			[
+				"arra",
+				"arrayOfSensorObjectData"
+			],
+			[
+				"last",
+				"lastItem"
+			],
+			[
+				"las",
+				"lastReadingSensors"
+			],
+			[
+				"retur",
+				"returnData"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"cl",
+				"clients"
+			],
+			[
+				"lastRead",
+				"lastReadingSensors"
+			],
+			[
+				"arr",
+				"arrayObjectKey"
+			],
+			[
+				"sesn",
+				"sensorDataObject"
+			],
+			[
+				"curre",
+				"current"
+			],
+			[
+				"current",
+				"lastReadingCurrentSensor"
+			],
+			[
+				"lasRea",
+				"lastReadingCurrentSensor"
+			],
+			[
+				"report",
+				"reportData"
+			],
+			[
+				"han",
+				"handleSensorData"
+			],
+			[
+				"lastRea",
+				"lastReadingCurrentSensor"
+			],
+			[
+				"lastReading",
+				"lastreadingCurrentSensor"
+			],
+			[
+				"sens",
+				"sensorDataObject"
+			],
+			[
+				"sen",
+				"sensorColumn"
+			],
+			[
+				"repo",
+				"reportData"
+			],
+			[
+				"create",
+				"createTextNode"
+			],
+			[
+				"data",
+				"dataHasChanged"
+			],
+			[
+				"tab",
+				"tableRowElement"
+			],
+			[
+				"ce",
+				"cellspacing	Attr"
+			],
+			[
+				"senso",
+				"sensorItem"
+			],
+			[
+				"sensors",
+				"sensorsData"
+			],
+			[
+				"split",
+				"splitData"
+			],
+			[
+				"seri",
+				"SerialPort"
+			],
+			[
+				"mysql_",
+				"mysql_fetch_array"
+			],
+			[
+				"mysql_conn",
+				"mysql_pconnect"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "slide/index.html",
+			"settings":
+			{
+				"buffer_size": 4774,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "slide/public/style.css",
+			"settings":
+			{
+				"buffer_size": 4261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "slide/public/slide.js",
+			"settings":
+			{
+				"buffer_size": 2182,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"last_filter": "bower",
+		"selected_items":
+		[
+			[
+				"bower",
+				"Bower: Install"
+			],
+			[
+				"bwer",
+				"Bower: Install dependencies"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/media/mtakin/Data/Server/seminar/slide",
+		"/media/mtakin/Data/Server/seminar/slide/public",
+		"/media/mtakin/Data/Server/seminar/slide/public/images"
+	],
+	"file_history":
+	[
+		"/media/mtakin/Data/Server/css3/index.html",
+		"/media/mtakin/Data/Server/css3/style.css",
+		"/media/mtakin/Data/Server/seminar/slide/index.html",
+		"/media/mtakin/Data/Server/seminar/slide/public/images/what-does-it-mean.png",
+		"/media/mtakin/Data/Server/dom-parser/simple_html_dom.php",
+		"/media/mtakin/Data/Server/seminar/slide/public/slide.js",
+		"/media/mtakin/Data/Server/seminar/slide/public/style.css",
+		"/media/mtakin/Data/Server/seminar/slide/bower_components/reveal.js/css/reveal.css",
+		"/media/mtakin/Data/Server/seminar/slide/bower_components/reveal.js/css/theme/sky.css",
+		"/media/mtakin/Data/Server/seminar/seminar.sublime-project",
+		"/media/mtakin/Data/Server/seminar/index.html",
+		"/media/mtakin/Data/Program/Ontologi/dataset-turtle.owl",
+		"/media/mtakin/Data/Program/Ontologi/dataset.owl",
+		"/media/mtakin/Data/Program/Workspace/web-version/pom.xml",
+		"/usr/share/apache-maven-3.3.9/conf/settings.xml",
+		"/media/mtakin/Data/Projects/With Panji/shelf/app-server/public/index.html",
+		"/media/mtakin/Data/Projects/With Panji/shelf/app-server/test.js",
+		"/media/mtakin/Data/Projects/With Panji/shelf/app-server/public/css/style.css",
+		"/media/mtakin/Data/Projects/With Panji/shelf/app-server/package.json",
+		"/home/mtakin/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/media/mtakin/Data/Projects/With Panji/app-server/socket-handler.js",
+		"/media/mtakin/Data/Projects/With Panji/app-server/public/js/socket-client.js",
+		"/media/mtakin/Data/Projects/With Panji/app-server/public/index.html",
+		"/media/mtakin/Data/Projects/With Panji/app-server/app.js",
+		"/media/mtakin/Data/Projects/With Panji/app-server/socket-server.js",
+		"/media/mtakin/Data/Projects/With Panji/app-server/socket-client.js",
+		"/home/mtakin/.m2/settings.xml",
+		"/home/mtakin/Desktop/testing.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bodyBg",
+			"p",
+			"aside",
+			"p",
+			"section",
+			"lastReadingCurrentSensor",
+			"currentTempSensor",
+			"lastreadingCurrentSensor",
+			"row",
+			"Row",
+			"row",
+			"tempArrayOfSensor",
+			"sensorData",
+			"sensorsData"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "slide/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "slide/public/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 184.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "slide/public/slide.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2046,
+								2046
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 538.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "seminar.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"slide",
+				"public/slide.js"
+			],
+			[
+				"sty",
+				"public/style.css"
+			],
+			[
+				"revea",
+				"bower_components/reveal.js/css/reveal.css"
+			],
+			[
+				"sky",
+				"bower_components/reveal.js/css/theme/sky.css"
+			],
+			[
+				"socl",
+				"public/js/socket-client.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"latar",
+				"parts/BAB_1/latar_belakang.tex"
+			],
+			[
+				"bab",
+				"parts/BAB_1.tex"
+			],
+			[
+				"main",
+				"Main.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 291.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
