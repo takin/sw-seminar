@@ -6,8 +6,8 @@ body {
     background-repeat: no-repeat;
 }
 .reveal .slides section.present,.reveal .slides section.stacked-slide > .fragment.visible {
-    background: -webkit-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
-    background: -moz-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
+    background: -webkit-linear-gradient(0deg, rgba(230,230,230,.7), rgba(230,230,230,.7)), url("/public/images/cover-bg-small-blur.jpg");
+    background: -moz-linear-gradient(0deg, rgba(230,230,230,.7), rgba(230,230,230,.7)), url("/public/images/cover-bg-small-blur.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     -moz-background-size: cover;
@@ -18,6 +18,8 @@ body {
     border: 1px solid rgba(245,245,245,.4);
     box-shadow: 0 25px 37px rgba(10,20,30,1);
     padding-top: 0px;
+    color: rgb(30,145,20);
+    text-shadow: 0 2px 4px rgba(145,200,145,1);
 }
 .reveal .slides section.cover h3 {
     background:none;
@@ -149,7 +151,7 @@ body {
 }
 
 .reveal .slides .fragment.highlight-red.visible {
-    text-shadow: 0 0 2px rgba(255,10,100,1);
+    text-shadow: 0 2px 4px rgba(255,10,100,1);
 }
 
 .reveal .slides section > ul > li {
