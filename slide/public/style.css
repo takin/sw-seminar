@@ -5,7 +5,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-.reveal .slides section.present {
+.reveal .slides section.present,.reveal .slides section.stacked-slide > .fragment.visible {
     background: -webkit-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
     background: -moz-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
     background-repeat: no-repeat;
@@ -84,7 +84,6 @@ body {
     position: absolute;
     background: -moz-linear-gradient(0deg, rgba(255,255,255,0),rgba(255,255,255,0));
     border-radius: 5px;
-/*     top: 80px; */
     transform: scale(.5);
     visibility: hidden;
     left: 30px;
@@ -158,7 +157,7 @@ body {
 }
 
 .reveal .slides section.stacked-slide {
-    background: transparent;
+    background: none;
     box-shadow: none;
     border: none;
-} 
+}

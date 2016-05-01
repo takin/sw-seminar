@@ -1,72 +1,111 @@
 'use strict';
 
-function applyBodyBackground(bg, center, edge) {
+document.addEventListener('DOMContentLoaded', () => {
 
-	var body = document.querySelector('body'),
-		section = document.querySelector('section.present'),
-		imagesPath = 'http://slide.seminar.sw/public/images/',
-		bodyBg,sectionBg,bgExt;
+	var Slide = (event) => {
 
-	if ( typeof(bg) !== 'undefined' ) {
 		
-		var bgObjects = bg.split(new RegExp('\.(jpe?g|png)$','i'));
+		const _imagesPath 			= 'http://slide.seminar.sw/public/images/',
+			  _defBg 				= 'cover-bg-small.jpg',
+			  _defCenterGradient 	= .3,
+			  _defEdgeGradient 		= .6;
+		var	  _body 				= document.querySelector('body');
 		
-		bodyBg = imagesPath + bgObjects[0] + '.' + bgObjects[1];
-		sectionBg = imagesPath + bgObjects[0] + '-blur.' + bgObjects[1];
+		var _section = (new function() {
 
-	} else {
-		bodyBg = imagesPath + 'cover-bg-small.jpg';
-		sectionBg = imagesPath + 'cover-bg-small-blur.jpg';
-	}
+			 	var section = document.querySelector('section.present');
+				var elementClasses = section.getAttribute('class');
 
-	var center = typeof(center) === 'undefined' ? .7 : center;
-	var edge = typeof(edge) === 'undefined' ? .8 : edge;
+				return {
+					element:section,
+					isContainClass: function(className) {
+						return new RegExp(className,'i').test(elementClasses);
+					},
+					getClasses: function () {
+						return elementClasses;
+					}
+				}
+			}());
+
+		function getStyle(image, centerGradient, edgeGradient) {
+
+			var imagePath = typeof(image) === 'undefined' ? getImagePath(_defBg) : getImagePath(image);
+
+			return  {
+				body: function() {
+					return `background:-webkit-radial-gradient(center, circle cover, rgba(250,250,250,`+ centerGradient + `) 0%, rgba(20,20,20,`+ edgeGradient +`) 100%),url('` + imagePath.original + `');
+				   			background:-moz-radial-gradient(center, circle cover, rgba(250,250,250,`+ centerGradient + `) 0%, rgba(20,20,20,`+ edgeGradient +`) 100%),url('` + imagePath.original + `');
+				   			background-size:cover;background-repeat:no-repeat;`;
+				}(),
+				section: function() {
+					var originalSectionStyle = _section.element.getAttribute('style');
+					return originalSectionStyle + `background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url('` + imagePath.blur + `');
+					      	background-image: -moz-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)),url('` + imagePath.blur + `');
+					      	background-repeat: no-repeat;
+						    background-attachment: fixed;
+						    -moz-background-size: cover;
+						    -o-background-size: cover;
+						    -webkit-background-size: cover;
+						    background-size: cover;
+						    border-radius: 5px;
+						    border: 1px solid rgba(245,245,245,.4);
+						    box-shadow: 0 25px 37px rgba(10,20,30,1);
+						    padding-top: 0px;`;
+				}()
+			};
+		}
+
+		function getImagePath(imageName) {
+
+			var splittedImageName = imageName.split(new RegExp('\.(jpe?g|png|gif)$','i'));
+
+			return {
+				original: _imagesPath + imageName,
+				blur: _imagesPath + splittedImageName[0] + '-blur' + '.' + splittedImageName[1]
+			};
+		}
 	
-	// console.log(bgObjects);
+		function applyBackground(bgImage, centerGradient, edgeGradient) {
 
-	var bodyBgStyle = `background:-webkit-radial-gradient(center, circle cover, rgba(250,250,250,`+ center + `) 0%, rgba(20,20,20,`+ edge +`) 100%),
-				   url('` + bodyBg + `');
-				   background:-moz-radial-gradient(center, circle cover, rgba(250,250,250,`+ center + `) 0%, rgba(20,20,20,`+ edge +`) 100%),
-				   url('` + bodyBg + `');
-				   background-size:cover;background-repeat:no-repeat;`;
+			var bodyStyle,sectionStyle;
 
-	var sectionBgStyle = `background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), 
-					      url('` + sectionBg + `');
-					      background-image: -moz-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)),
-					 	  url('` + sectionBg + `');`;
+			if ( _section.isContainClass('image-only') ) {
+			} else if ( _section.isContainClass('stacked-slide') ) {
 
-	body.setAttribute('style', bodyBgStyle);
-	section.setAttribute('style', sectionBgStyle);
-}
+			}else {
+				bodyStyle = getStyle(bgImage, centerGradient, edgeGradient).body;
+				sectionStyle = getStyle(bgImage, centerGradient, edgeGradient).section;
+				_body.setAttribute('style', bodyStyle);
+				_section.element.setAttribute('style', sectionStyle);
+			}
+		}
 
-Reveal.initialize({
-	transition:'convex',
-	// width: 900,
-	backgroundTransition:'fade',
-	history:true,
-	controls:false,
-	progress: false
-	// parallaxBackgroundImage:'http://slide.seminar.sw/public/images/social-media-crowd-2.jpg',
-	// parallaxBackgroundSize:'1200px 500px'
-});
+		var state = Reveal.getState();
+		switch( state.indexh ) {
+			case 4:
+				applyBackground('data-center-1.jpg',.2,.5);
+			break;
+			case 8:
+				applyBackground('html-source.jpg',.3,.6);
+			break;
+			case 12:
+				applyBackground('student-in-lib.jpg',.3,.6);
+			break;
+			default:
+				applyBackground();
+			break;
+		}
+	};
 
-Reveal.addEventListener('slidechanged', function(event) {
 
-	var state = Reveal.getState();
+	Reveal.initialize({
+		transition:'convex',
+		backgroundTransition:'fade',
+		history:true,
+		controls:false,
+		progress: false
+	});
 
-	switch( state.indexh ) {
-		case 4:
-			applyBodyBackground('data-center-1.jpg',.2,.5);
-		break;
-		case 8:
-			applyBodyBackground('html-source.jpg',.3,.6);
-		break;
-		case 12:
-			applyBodyBackground('student-in-lib.jpg',.3,.6);
-		break;
-		default:
-			applyBodyBackground();
-		break;
-	}
+	Reveal.addEventListener('slidechanged', Slide);
 
 });
