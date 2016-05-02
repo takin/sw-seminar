@@ -5,33 +5,27 @@
 	<title>Semantic Web Seminar</title>
 	<link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
 	<link rel="stylesheet" href="bower_components/reveal.js/css/theme/sky.css">
-	<link rel="stylesheet" href="public/style.css">
+	<link rel="stylesheet" href="public/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
 	<div class="reveal">
 		<div class="slides">
 			<!-- Cover -->
 			<section class="cover" data-transition="fade-in zoom-out">
-				<h5>Seminar Semantic Web</h5><br/>
-				<h3>Menyongsong era</h3> 
-				<h2>web of data</h2>
-				<br/>
-				<h5>Syamsul Muttaqin</h5>
+				<div class="main-title-container">
+					<span class="slide-about">Seminar</span>
+					<img src="public/images/sw-layercake.png" alt="">
+					<span class="slide-title-small">Menyongsong era</span> 
+					<span class="slide-title-big">web of data</span>
+					<!-- <span class="presenter-name">Syamsul Muttaqin</span> -->
+				</div>
 			</section>
 			<!-- Slide 1 -->
 			<section data-transition="fade-in convex-out" class="image-only" data-background="public/images/web-trends.jpg"></section>
-			
-			<section data-transition="fade-in convex-out">
-				<h3>Motivation</h3>
-				<ul>
-					<li class="fragment">Memudahkan komputer dalam memahami konten web secara semantis</li>
-					<li class="fragment">Web difungsikan sebagai desentralize database yang menydiakan informasi baik secara eksplisit maupun implisit</li>
-					<li class="fragment">Memungkinkan pertukaran informasi antar web sehingga dapat di proses oleh komputer secara <i>autonomous</i></li>
-				</ul>
-			</section>
 
 			<!-- Slide 6 -->
-			<section data-transition="concave-in convex-out">
+			<section data-transition="zoom-in convex-out">
 				<img class="img-floated-left" width="240" src="public/images/Tim-Berners-Lee.jpg" alt="">
 				<blockquote class="with-left-floated-image">"The Semantic Web is an extension of the current
 web in which <span class="fragment highlight-red">information is given well-defined
@@ -40,6 +34,14 @@ work in cooperation</span>"</blockquote>
 				<p class="green-color">--Tim-Berners-Lee--</p>
 			</section>
 			
+			<section>
+				<h3>Motivation</h3>
+				<ul>
+					<li class="fragment">Memudahkan komputer dalam memahami konten web secara semantis</li>
+					<li class="fragment">Web difungsikan sebagai desentralize database yang menydiakan informasi baik secara eksplisit maupun implisit</li>
+					<li class="fragment">Memungkinkan pertukaran informasi antar web sehingga dapat di proses oleh komputer secara <i>autonomous</i></li>
+				</ul>
+			</section>
 
 			<!-- Slide 2 -->
 			<section data-transition="convex-in fade-out">
@@ -59,6 +61,79 @@ work in cooperation</span>"</blockquote>
 
 			<section class="image-only" data-background="public/images/the-deep-web.jpg" data-transition="fade-in fade-out"></section>
 
+
+			<!-- Slide 5 -->
+			<section class="full-image">
+					<h3>How to find informations...</h3>
+					<img src="public/images/search-engines-cropped.png" class="fragment">
+			</section>
+			<!-- Slide 7 -->
+			<section>
+				<section class="full-image" data-transition="fade">
+					<h3>IR problems</h3>
+					<img src="public/images/search-term.png" alt="">
+					<div class="fragment" data-fragment-index="1">
+						<div>
+							<p>Information Retrieval terkendala masalah ambiguitas bahasa alami</p>
+							<ul style="top: 30%">
+								<li class="fragment" data-fragment-index="2">
+									Satu kata memiliki makna (semantik) berbeda
+									<blockquote class="fragment" data-fragment-index="3">
+										"...di taman safari banyak terdapat <span data-fragment-index="5" class="fragment highlight-red">Kijang</span> yang mati."
+									</blockquote>
+									<blockquote class="fragment" data-fragment-index="4">
+										"...jumlah penjualan mobil <span data-fragment-index="5" class="fragment highlight-red">Kijang</span> dari tahun ke tahun terus meningkat."
+									</blockquote>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="full-image" data-transition="fade">
+					<h3>IR problems</h3>
+					<img src="public/images/search-term.png" alt="">
+					<div class="fragment" data-fragment-index="1" style="top: 25%">
+						<div>
+							<ul>
+								<li>Banyak kata/frasa memiliki makna sama
+									<div class="fragment" data-fragment-index="2">
+										<blockquote>
+											"Siapakah rektor <span class="fragment highlight-red" data-fragment-index="3">UGM</span> ?"
+										</blockquote>
+										<blockquote>
+											"Siapakah rektor <span class="fragment highlight-red" data-fragment-index="3">Universitas Gadjah Mada</span> ?"
+										</blockquote>
+									</div>
+									<p></p>
+									<div class="fragment" data-fragment-index="4">
+										<blockquote>
+											"Kota <span class="fragment highlight-red" data-fragment-index="5">paris van java</span> terletak di provinsi mana?"
+										</blockquote>
+										<blockquote>
+											"Kota <span class="fragment highlight-red" data-fragment-index="5">Bandung</span> terletak di provinsi mana ?"
+										</blockquote>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section class="full-image">
+				<h3>Successful Communication</h3>
+				<img src="public/images/understanding-meaning.png" alt="">
+				<div class="fragment">
+					<div>
+						<p>Komunikasi akan sukses apabila</p>
+						<ul>
+							<li class="fragment">Pesan dikirim dengan benar</li>
+							<li class="fragment">Antara <i>sender</i> dan <i>receiver</i> memiliki konteks pengetahuan yang sama</li>
+						</ul>
+					</div>
+				</div>
+			</section>	
+
 			<section data-state="html-problems" data-transition="fade-in convex-out">
 				<h3>The (Current) Web Problems...</h3>
 				<ul>
@@ -76,43 +151,25 @@ work in cooperation</span>"</blockquote>
 				</ul>
 			</section>
 
-			<section class="full-image">
-				<h3>The importance of meaning</h3>
-				<img src="public/images/understanding-meaning.png" alt="">
+			<section>
+				<h3>What is the solution ?</h3>
+				<ul>
+					<li class="fragment"><b>Konsep</b> <p class="item-note fragment"><i><b>Beritahu</b></i> komputer tentang makna konsep yang kita maksud</p></li>
+					<li class="fragment"><b>Solusi</b> <p class="item-note fragment">Tambahkan <i><b>metadata</b></i> pada setiap konsep yang memiliki makna semantis</p>
+					<li class="fragment"><b>Implementasi</b> <p class="item-note fragment">Gunakan <b>ontologi</b> untuk membentuk struktur konsep</p></li>
+				</ul>
 			</section>
 			
 			<section>
 				<h3>From data to information</h3>
 			</section>
-
-			<!-- Slide 5 -->
-			<section class="full-image">
-					<h3>How to find informations...</h3>
-					<img src="public/images/search-engines.png" class="fragment">
+			
+			<section>
+				<h3>From search to discover</h3>
 			</section>
-			<!-- Slide 7 -->
-			<section class="full-image">
-				<h3>IR problems</h3>
-				<img src="public/images/search-term.png" alt="">
-				<div class="fragment">
-					<div>
-						<p>Information Retrieval terkendala masalah ambiguitas bahasa alami</p>
-						<ul style="top: 30%">
-							<li class="fragment">
-								Satu kata memiliki makna berbeda
-								<ul>
-									<li class="fragment">Kijang</li>
-									<li class="fragment">Loro (dalam bahasa jawa dapat berarti <span class="color-green">sakit</span> atau <span class="color-green">dua</span>)</li>
-								</ul>
-							</li>
-							<li class="fragment">Banyak kata memiliki makna sama
-								<ul>
-									<li class="fragment">UGM -> Universitas Gadjah Mada</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
+
+			<section>
+				<h3>Wikipedia to dbpedia</h3>
 			</section>
 
 		</div>

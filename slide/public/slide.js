@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
 						    -webkit-background-size: cover;
 						    background-size: cover;
 						    border-radius: 5px;
-						    border: 1px solid rgba(245,245,245,.4);
 						    box-shadow: 0 25px 37px rgba(10,20,30,1);
 						    padding-top: 0px;`;
 				}()
@@ -69,6 +68,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			var bodyStyle,sectionStyle;
 
+			if(typeof(centerGradient) === 'undefined'){
+				centerGradient = _defCenterGradient;
+			}
+			
+			if(typeof(edgeGradient) === 'undefined'){
+				edgeGradient = _defEdgeGradient;
+			}
+
 			if ( _section.isContainClass('image-only') ) {
 			} else if ( _section.isContainClass('stacked-slide') ) {
 
@@ -86,10 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
 				applyBackground('data-center-1.jpg',.2,.5);
 			break;
 			case 8:
-				applyBackground('html-source.jpg',.3,.6);
+				applyBackground('html-source.jpg');
 			break;
 			case 12:
-				applyBackground('student-in-lib.jpg',.3,.6);
+				applyBackground('ai.jpg');
 			break;
 			default:
 				applyBackground();

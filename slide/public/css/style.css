@@ -8,20 +8,58 @@ body {
 .reveal .slides section.present,.reveal .slides section.stacked-slide > .fragment.visible {
     background: -webkit-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
     background: -moz-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -moz-background-size: cover;
+/*     background-repeat: no-repeat; */
+     background-attachment: fixed; 
+     -moz-background-size: cover; 
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
     border-radius: 5px;
-    border: 1px solid rgba(245,245,245,.4);
+    /*border: 1px solid rgba(245,245,245,.4);*/
     box-shadow: 0 25px 37px rgba(10,20,30,1);
     text-shadow: 1px 2px 4px rgb(150,150,150);
     padding-top: 0px;
 }
-.reveal .slides section.cover h3 {
-    background:none;
+.reveal .slides section.cover.present {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+}
+section.cover div {
+    background: radial-gradient(circle, rgba(10,200,10,.03)20%,rgba(80,190,86,.6) 75%,rgba(170,230,46,.8) 110%);
+    padding:20px 0 80px  0;
+    border-radius: 5px;
+}
+section.cover div img {
+    height: 310px;
+}
+section.cover div span {
+    display: block;
+    line-height: 1.15em;
+}
+section.cover div span.slide-title-big,section.cover div span.slide-title-small,section.cover div .slide-about {
+    text-transform: uppercase;
+    color: rgb(40,70,185);
+    text-shadow: 0 2px 5px rgb(40,130,170);
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+section.cover div span.slide-title-big {
+    font-size: 2em;
+}
+section.cover div span.slide-title-small {
+    font-size: 1.2em;
+}
+section.cover div .slide-about {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 20px 0 10px 0;
+    color: rgb(140,60,130);
+    text-shadow: 0 2px 5px rgba(140,130,170,1);
+}
+section.cover div span.presenter-name {
+    font-size: .7em;
+    padding: 50px;
 }
 
 .reveal .slides section h3 {
@@ -85,10 +123,10 @@ body {
     position: absolute;
     background: -moz-linear-gradient(0deg, rgba(255,255,255,0),rgba(255,255,255,0));
     border-radius: 5px;
-    transform: scale(.5);
-    visibility: hidden;
+    opacity: 0;
     left: 30px;
     width: 90%;
+    top: 80px;
     z-index: 1001;
     padding: 20px;
     box-shadow: none;
@@ -98,8 +136,7 @@ body {
 
 .reveal .slides .full-image > div.visible > div {
     top: 50px;
-    transform: scale(1);
-    visibility: visible;
+    opacity: 1;
     background-attachment: fixed;
     background: -moz-linear-gradient(0deg, rgba(255,255,255,.7),rgba(255,255,255,.7)),url('/public/images/search-term-blur.png');
     background: -webkit-linear-gradient(0deg, rgba(255,255,255,.7),rgba(255,255,255,.7)),url('/public/images/search-term-blur.png');
@@ -107,15 +144,41 @@ body {
     background-size: 107%;
     background-position: -33px -55px;
 }
-
-.reveal .slides .full-image ul > li {
-    margin-left: 50px;
+p.item-note {
+    display: block;
+    margin-top: 0px;
 }
-
-.reveal .slides .full-image ul > li > ul li {
-    margin-left: 0px;
+.reveal .slides section ul {
+    list-style: none;
 }
-
+.reveal .slides section > ul {
+    margin-left:1.9em;
+    margin-right: .7em;
+}
+.reveal .slides section > ul > li {
+    margin-left: .6em;
+}
+.reveal .slides section div > ul > li > ul li:before {
+    margin-right: .5em;
+}
+.reveal .slides section > ul > li:before, .reveal .slides section div > ul > li:before, .reveal .slides section ul > li ul li:before {
+    font-family: FontAwesome;  
+}
+.reveal .slides section > ul > li:before, .reveal .slides section div > ul > li:before {
+    content: "\f14a";
+}
+.reveal .slides section ul > li ul li:before {
+    content: "\f0a4";
+}
+.reveal .slides section > ul > li:before {
+    margin-left: -1.3em;
+    margin-right: .4em;
+}
+.reveal .slides section div > ul > li:before {
+    margin-left: -0.5em;
+    margin-right: .3em;
+    width: 1.5em;
+}
 .reveal .slides ul > li.fragment,.reveal .slides ul > li.fragment > ul > li.fragment {
     transform: scale(.7);
     transition: all ease .8s;
@@ -124,9 +187,23 @@ body {
 .reveal .slides ul > li.fragment.visible,.reveal .slides ul > li.fragment > ul > li.fragment.visible {
     transform: scale(1);
 }
-
+.reveal .slides section > ul > li > ul > li {
+    margin-left: 1em;
+}
+.reveal .slides section > ul > li > ul > li:before {
+    margin-left: -1.6em;
+    margin-right: .5em;
+}
+.reveal .slides section > ul > li,.reveal .slides section > ul > li > ul > li,.reveal .slides section div > ul > li {
+    margin-top: 10px;
+}
 .reveal .slides section blockquote {
     background: none;
+    width: auto;
+    box-shadow: none;
+}
+.reveal .slides li blockquote {
+    margin:0 20px 0 30px;
 }
 .reveal .slides section blockquote.with-left-floated-image {
     margin-left: 280px;
@@ -152,10 +229,6 @@ body {
 .reveal .slides .fragment.highlight-red.visible {
     text-shadow: 0 0 2px rgba(255,10,100,1);
     text-shadow: 1px 2px 4px rgb(150,0,0);
-}
-
-.reveal .slides section > ul > li {
-    margin: 20px;
 }
 
 .reveal .slides section.stacked-slide {
