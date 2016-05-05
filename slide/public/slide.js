@@ -98,6 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			case 12:
 				applyBackground('ai.jpg');
 			break;
+			case 25:
+				applyBackground('lod-cloud.png');
+			break;
 			default:
 				applyBackground();
 			break;

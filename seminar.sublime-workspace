@@ -4,24 +4,168 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"_de",
+				"_defEdgeGradient"
+			],
+			[
+				"isHa",
+				"isHaveClass"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"origi",
+				"originalDivStyle"
+			],
+			[
+				"new",
+				"newStyle"
+			],
+			[
+				"ec",
+				"edgeGradientTransprency"
+			],
+			[
+				"_deg",
+				"_defEdgeGradient"
+			],
+			[
+				"_def",
+				"_defCenterGradient"
+			],
+			[
+				"spli",
+				"split"
+			],
+			[
+				"sec",
+				"sectionBgTransparency"
+			],
+			[
+				"cen",
+				"centerGradientTransparency"
+			],
+			[
+				"backg",
+				"backgroundDiv"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"orig",
+				"originalBgImage"
+			],
+			[
+				"_",
+				"_backgroundDiv"
+			],
+			[
+				"datae",
+				"datasetName"
+			],
+			[
+				"is",
+				"isHaveCustomBackgrundImage"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"orgi",
+				"originalDivStyle"
+			],
+			[
+				"origin",
+				"original"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"eleme",
+				"elementClasses"
+			],
+			[
+				"sect",
+				"section"
+			],
+			[
+				"_secto",
+				"_sectionElement"
+			],
+			[
+				"_sectio",
+				"_sectionElement"
+			],
+			[
+				"image",
+				"imagePath"
+			],
+			[
+				"imag",
+				"imagePath"
+			],
+			[
+				"sectio",
+				"section"
+			],
+			[
+				"cente",
+				"centerGradient"
+			],
+			[
 				"body",
-				"bodyBg"
+				"bodyStyle"
+			],
+			[
+				"edge",
+				"edgeGradient"
+			],
+			[
+				"stac",
+				"stacked-slide"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"get",
+				"getElement"
+			],
+			[
+				"section",
+				"sectionBgStyle"
+			],
+			[
+				"appl",
+				"applyDefaultStyle"
 			],
 			[
 				"cove",
 				"cover-bg-small"
 			],
 			[
-				"image",
-				"imagesPath"
-			],
-			[
 				"ima",
 				"imagesPath"
-			],
-			[
-				"section",
-				"sectionBg"
 			],
 			[
 				"secti",
@@ -32,20 +176,8 @@
 				"cover"
 			],
 			[
-				"bac",
-				"background-size"
-			],
-			[
 				"back",
 				"background-size"
-			],
-			[
-				"backg",
-				"background-image"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"text",
@@ -86,10 +218,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"cl",
-				"clients"
 			],
 			[
 				"lastRead",
@@ -191,15 +319,15 @@
 			"file": "slide/index.html",
 			"settings":
 			{
-				"buffer_size": 4774,
+				"buffer_size": 12933,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "slide/public/style.css",
+			"file": "slide/public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 4261,
+				"buffer_size": 6700,
 				"line_ending": "Unix"
 			}
 		},
@@ -207,7 +335,7 @@
 			"file": "slide/public/slide.js",
 			"settings":
 			{
-				"buffer_size": 2182,
+				"buffer_size": 3577,
 				"line_ending": "Unix"
 			}
 		}
@@ -275,10 +403,12 @@
 	[
 		"/media/mtakin/Data/Server/seminar/slide",
 		"/media/mtakin/Data/Server/seminar/slide/public",
-		"/media/mtakin/Data/Server/seminar/slide/public/images"
+		"/media/mtakin/Data/Server/seminar/slide/public/css"
 	],
 	"file_history":
 	[
+		"/media/mtakin/Data/Server/seminar/slide/bower_components/reveal.js/css/reveal.css",
+		"/media/mtakin/18C7-0575/seminar/slide/public/style.css",
 		"/media/mtakin/Data/Server/css3/index.html",
 		"/media/mtakin/Data/Server/css3/style.css",
 		"/media/mtakin/Data/Server/seminar/slide/index.html",
@@ -286,7 +416,6 @@
 		"/media/mtakin/Data/Server/dom-parser/simple_html_dom.php",
 		"/media/mtakin/Data/Server/seminar/slide/public/slide.js",
 		"/media/mtakin/Data/Server/seminar/slide/public/style.css",
-		"/media/mtakin/Data/Server/seminar/slide/bower_components/reveal.js/css/reveal.css",
 		"/media/mtakin/Data/Server/seminar/slide/bower_components/reveal.js/css/theme/sky.css",
 		"/media/mtakin/Data/Server/seminar/seminar.sublime-project",
 		"/media/mtakin/Data/Server/seminar/index.html",
@@ -324,6 +453,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"section",
+			"_slideDivBg",
+			"transition",
+			"transisi",
+			"sectionBg",
+			"bodyBg",
+			"ault",
+			"_defaultBodyBg",
+			"ault",
 			"bodyBg",
 			"p",
 			"aside",
@@ -355,7 +493,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -364,15 +502,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4774,
+						"buffer_size": 12933,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								315,
-								315
+								12724,
+								12724
 							]
 						],
 						"settings":
@@ -381,27 +519,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 102.0,
+						"translation.y": 5469.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "slide/public/style.css",
+					"file": "slide/public/css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4261,
+						"buffer_size": 6700,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								30,
-								30
+								3836,
+								3836
 							]
 						],
 						"settings":
@@ -410,11 +548,11 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 184.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 2102.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -423,15 +561,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2182,
+						"buffer_size": 3577,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2046,
-								2046
+								3329,
+								3329
 							]
 						],
 						"settings":
@@ -440,10 +578,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 538.0,
+						"translation.y": 1275.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -502,6 +640,10 @@
 		"selected_items":
 		[
 			[
+				"revea",
+				"bower_components/reveal.js/css/reveal.css"
+			],
+			[
 				"inde",
 				"index.html"
 			],
@@ -512,10 +654,6 @@
 			[
 				"sty",
 				"public/style.css"
-			],
-			[
-				"revea",
-				"bower_components/reveal.js/css/reveal.css"
 			],
 			[
 				"sky",

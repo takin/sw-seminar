@@ -134,7 +134,7 @@ section.cover div span.presenter-name {
     transition: all ease .8s;
 }
 
-.reveal .slides .full-image > div.visible > div {
+.reveal .slides .full-image  div.visible > div {
     top: 50px;
     opacity: 1;
     background-attachment: fixed;

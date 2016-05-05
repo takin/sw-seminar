@@ -24,25 +24,6 @@
 			<!-- Slide 1 -->
 			<section data-transition="fade-in convex-out" class="image-only" data-background="public/images/web-trends.jpg"></section>
 
-			<!-- Slide 6 -->
-			<section data-transition="zoom-in convex-out">
-				<img class="img-floated-left" width="240" src="public/images/Tim-Berners-Lee.jpg" alt="">
-				<blockquote class="with-left-floated-image">"The Semantic Web is an extension of the current
-web in which <span class="fragment highlight-red">information is given well-defined
-meaning</span>, better enabling <span class="fragment highlight-red">computers and people to
-work in cooperation</span>"</blockquote>
-				<p class="green-color">--Tim-Berners-Lee--</p>
-			</section>
-			
-			<section>
-				<h3>Motivation</h3>
-				<ul>
-					<li class="fragment">Memudahkan komputer dalam memahami konten web secara semantis</li>
-					<li class="fragment">Web difungsikan sebagai desentralize database yang menydiakan informasi baik secara eksplisit maupun implisit</li>
-					<li class="fragment">Memungkinkan pertukaran informasi antar web sehingga dapat di proses oleh komputer secara <i>autonomous</i></li>
-				</ul>
-			</section>
-
 			<!-- Slide 2 -->
 			<section data-transition="convex-in fade-out">
 				<h3>How big the web is...?</h3>
@@ -63,15 +44,10 @@ work in cooperation</span>"</blockquote>
 
 
 			<!-- Slide 5 -->
-			<section class="full-image">
-					<h3>How to find informations...</h3>
-					<img src="public/images/search-engines-cropped.png" class="fragment">
-			</section>
-			<!-- Slide 7 -->
 			<section>
 				<section class="full-image" data-transition="fade">
-					<h3>IR problems</h3>
-					<img src="public/images/search-term.png" alt="">
+					<h3>How to find informations...</h3>
+					<img src="public/images/search-engines-cropped.png" class="fragment" data-fragment-index="0">
 					<div class="fragment" data-fragment-index="1">
 						<div>
 							<p>Information Retrieval terkendala masalah ambiguitas bahasa alami</p>
@@ -91,7 +67,7 @@ work in cooperation</span>"</blockquote>
 				</section>
 				<section class="full-image" data-transition="fade">
 					<h3>IR problems</h3>
-					<img src="public/images/search-term.png" alt="">
+					<img src="public/images/search-engines-cropped.png">
 					<div class="fragment" data-fragment-index="1" style="top: 25%">
 						<div>
 							<ul>
@@ -119,9 +95,33 @@ work in cooperation</span>"</blockquote>
 					</div>
 				</section>
 			</section>
+			<!-- Slide 7 -->
+			<section>
+				<h3>Kijang ????</h3>
+				<img src="public/images/search-term.png" alt="">
+				<section class="full-image" data-transition="fade">
+				</section>
+			</section>
+
+			<section data-state="html-problems" data-transition="fade-in convex-out">
+				<h3>The (Current) Web Problems...</h3>
+				<ul>
+					<li class="fragment">Konten disajikan dalam bentuk HTML, dimana HTML hanya berfokus pada
+						<ul>
+							<li class="fragment">Bagaimana menyajikan konten</li>
+							<li class="fragment">Bagaimana menghubungkan halaman web (link antar halaman)</li>
+						</ul>
+					</li>
+					<li class="fragment">HTML <b>tidak</b> mendeklarasikan makna semantis konten
+						<ul>
+							<li class="fragment">Mesin tidak memahami <span class="fragment grow highlight-red">makna semantis</span> konten web yang ditampilkan</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
 
 			<section class="full-image">
-				<h3>Successful Communication</h3>
+				<h3>The Importance of meaning</h3>
 				<img src="public/images/understanding-meaning.png" alt="">
 				<div class="fragment">
 					<div>
@@ -134,44 +134,211 @@ work in cooperation</span>"</blockquote>
 				</div>
 			</section>	
 
-			<section data-state="html-problems" data-transition="fade-in convex-out">
-				<h3>The (Current) Web Problems...</h3>
-				<ul>
-					<li class="fragment">Konten disajikan dalam bentuk HTML, dimana HTML hanya berfokus pada
-						<ul>
-							<li class="fragment">Bagaimana menyajikan konten</li>
-							<li class="fragment">Bagaimana menghubungkan halaman web (link antar halaman)</li>
-						</ul>
-					</li>
-					<li class="fragment">HTML <b>tidak dapat</b> mendeklarasikan makna semantis konten
-						<ul>
-							<li class="fragment">Mesin tidak memahami makna <span class="fragment grow highlight-red">semantis</span> konten web yang ditampilkan</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-
 			<section>
 				<h3>What is the solution ?</h3>
+					<p class="fragment" style="text-align: left; margin: 0 40px;">
+						"Ajari" komputer untuk memahami makna konten yang disajikan</p>
+					</p>
+					<ul>
+						<li class="fragment">
+							Gunakan teori Pemrosesan Bahasa Alami
+							<ul>
+								<li class="fragment">Analisa statistik</li>
+								<li class="fragment">Machine Learning</li>
+							</ul>
+						</li>
+						<li class="fragment">Gunakan Teknologi Semantic Web
+							<ul>
+								<li class="fragment">
+									Berikan <b>anotasi</b> atau <b>metadata</b> pada setiap objek yang memiliki definisi tertentu sehingga dapat dipahami oleh komputer
+								</li>
+							</ul>
+						</li>
+					</ul>
+			</section>
+
+			<!-- Slide 6 -->
+			<section data-transition="zoom-in convex-out">
+				<img class="img-floated-left" width="240" src="public/images/Tim-Berners-Lee.jpg" alt="">
+				<blockquote class="with-left-floated-image">"The Semantic Web is an extension of the current
+web in which <span class="fragment highlight-red">information is given well-defined
+meaning</span>, better enabling <span class="fragment highlight-red">computers and people to
+work in cooperation</span>"</blockquote>
+				<p class="green-color">--Tim-Berners-Lee--</p>
+			</section>
+			
+			<section>
+				<h3>Motivation</h3>
 				<ul>
-					<li class="fragment"><b>Konsep</b> <p class="item-note fragment"><i><b>Beritahu</b></i> komputer tentang makna konsep yang kita maksud</p></li>
-					<li class="fragment"><b>Solusi</b> <p class="item-note fragment">Tambahkan <i><b>metadata</b></i> pada setiap konsep yang memiliki makna semantis</p>
-					<li class="fragment"><b>Implementasi</b> <p class="item-note fragment">Gunakan <b>ontologi</b> untuk membentuk struktur konsep</p></li>
+					<li class="fragment">Memudahkan komputer dalam memahami konten web secara semantis</li>
+					<li class="fragment">Web difungsikan sebagai desentralize database yang menydiakan informasi baik secara eksplisit maupun implisit</li>
+					<li class="fragment">Memungkinkan pertukaran informasi antar web sehingga dapat di proses oleh komputer secara <i>autonomous</i></li>
 				</ul>
 			</section>
 			
-			<section>
-				<h3>From data to information</h3>
+			<section class="full-image">
+				<h3>The Semantic Web Stack</h3>
+				<img src="public/images/sweb-stack.gif" height="300" alt="">
 			</section>
 			
 			<section>
-				<h3>From search to discover</h3>
+				<section>
+					<h3>Semantic Web Technology</h3>
+						<ul>
+							<li class="fragment">Resource Description Framework (RDF)
+								<ul>
+									<li class="fragment">Standar cara merepresentasikan <i>knowledge</i> pada web</li>
+								</ul>
+							</li>
+							<li class="fragment">RDFS
+									<ul>
+									<li class="fragment">Menambahkan makna implisit yang mungkin dibentuk dari statment RDF</li>
+								</ul>
+							</li>
+							<li class="fragment">OWL
+								<ul>
+									<li class="li fragment">Menambah implicit knowledge yang tidak dapat dibangun melalui RDFS</li>
+								</ul>
+							</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>Semantic web technology</h3>
+					<ul>
+						<li class="fragment">RDFa
+						<ul>
+							<li class="fragment">Standar cara membangun idata terstruktur pada HTML</li>
+						</ul>
+					</li>
+					<li class="fragment">SPARQL
+						<ul>
+							<li class="fragment">Bahasa query RDF</li>
+						</ul>
+					</li>
+					</ul>
+				</section>
 			</section>
 
 			<section>
-				<h3>Wikipedia to dbpedia</h3>
+				<section>
+					<h3>Creating structured data</h3>
+					<ul>
+						<li class="fragment">
+							Data terstruktur yang dapat dipahami oleh komputer dibangun dengan menggunakan <i>directed graph</i>
+						</li>
+						<li class="fragment">
+							Sebuah <i>statement directed graph</i> terdiri dari subjek, predikat dan objek
+						</li>
+						<li class="fragment">Kumpulan <i>triple statement</i> membentuk <i>graph</i></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Building Statement</h3>
+					<blockquote>&rdquo;<span class="fragment highlight-green">Jaguar</span> adalah <span class="fragment highlight-red">mobil buatan</span> <span class="fragment highlight-blue">Jaguar Land Rover</span>&rdquo;</blockquote>
+					<div class="fragment"><img src="public/images/directed-graph.png"></div>
+				</section>
+				<section>
+					<h3>creating structured data</h3>
+					<ul>
+						<li class="fragment">
+							Segala hal yang ingin di <i>statement</i>kan harus memiliki identifikasi unik
+							<ul>
+								<li class="fragment">URI (Uniform Resource Identifier)</li>
+								<li class="fragment">URN (Uniform Resource Name)</li>
+							</ul>
+						</li>
+						<p class="fragment">Sehingga setiap <i>statment</i> mengacu pada URI/URN tersebut memiliki makna yang sama</p>
+					</ul>
+				</section>
+			</section>
+	
+<!-- 			<section>
+				<h3>Resource description framework</h3>
+				<ul>
+					<li class="fragment">Standarisasi cara merepresentasikan <i>knowledge</i></li>
+					<li class="fragment">Pengetahuan direpresentasikan dalam bentuk <i>statement</i></li>
+					<li class="fragment">Setiap <i>statement</i> terdiri dari subjek, predikat dan objek</li>
+				</ul>
+			</section> -->
+
+			<section>
+				<h3>RDF Triple</h3>
+				<blockquote>&rdquo;Jaguar adalah mobil buatan Jaguar Land Rover&rdquo;</blockquote>
+				<div class="fragment"><img src="public/images/triple-statement.png"></div>
+				<ul>
+					<li class="fragment">Subjek dan predikat harus berbentuk URI</li>
+					<li class="fragment">Objek dapat berupa URI atau Literal</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Triple Graph</h3>
+				<img src="public/images/graph-statements.png">
 			</section>
 
+			<section class="full-image">
+				<h3>Adding more information</h3>
+				<ul>
+					<li class="fragment">Apa itu <b>Jaguar</b> ??</li>
+					<li class="fragment">Apa itu <b>Jaguar Land Rover</b> ??</li>
+				</ul>
+			</section>
+
+			<section class="full-image">
+				<h3>RDF Schema</h3>
+				<img src="public/images/rdfs-graph-1.png" alt="">
+			</section>
+			<section>
+				<h3>RDF Schema</h3>
+				<ul>
+					<li class="fragment">Tambahkan statment tentang properti <b>prop:mobil_buatan</b>
+						<ul>
+							<li class="fragment"><i><b>rdfs:domain</b></i> <i class="fa fa-arrow-right"></i> <i><b>db:Mobil_Mewah</b></i></li>
+							<li class="fragment"><i><b>rdfs:range</b></i> <i class="fa fa-arrow-right"></i> <i><b>db:Automotive_Company</b></i></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="full-image" data-transition="convex-in none">
+				<h3>RDF Schema</h3>
+				<img src="public/images/rdfs-graph-1.png" alt="">
+			</section>
+			<section class="full-image" data-transition="fade-in convex-out">
+				<h3>RDF Schema</h3>
+				<img src="public/images/rdfs-graph-2.png" alt="">
+			</section>
+			<section>
+				<h3>RDF Schema</h3>
+				<p>..dengan <i>triple statement</i> dan skema RDFS sebelumnya, maka didapatkan informasi eksplisit</p>
+				<ul>
+					<li class="fragment">
+						<b>Jaguar</b> adalah sebuah <b>Mobil Mewah</b>
+					</li>
+					<li class="fragment">
+						<b>Jaguar</b> adalah sebuah <b>Mobil</b>
+					</li>
+					<li class="fragment">
+						<b>Jaguar Land Rover</b> adalah sebuah <b>Automotive Company</b>
+					</li>
+					<li class="fragment">
+						<b>Jaguar Land Rover</b> adalah sebuah <b>Company</b>
+					</li>
+				</ul>
+			</section>
+			<section class="image-only" data-background="public/images/lod-cloud.png"></section>
+			<section class="full-image" data-transition="zoom-in convex-out">
+				<img src="public/images/bbc-music-lod.png" alt="">
+			</section>
+			<section class="full-image">
+				<img src="public/images/google-graph.png" alt="">
+			</section>
+			<section class="full-image">
+				<img src="public/images/wolfram-alpha.png" alt="">
+			</section>
+			<section class="full-image">
+				<h3>Finally</h3>
+				<img src="public/images/thank-you.jpg" alt="">
+			</section>
 		</div>
 	</div>
 	<script src="bower_components/reveal.js/js/reveal.js"></script>
