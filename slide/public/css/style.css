@@ -19,7 +19,7 @@ section.my-profile {
     width: 28.5%;
     float: right;
     margin:20px;
-    box-shadow: 0 0 25px rgba(255,160,210,1);
+    box-shadow: 5px 0 25px rgba(160,255,150,1);
     border-radius: 5px;
 }
 .my-profile div#riwayat-pendidikan, .my-profile div#job-experience {
@@ -41,7 +41,7 @@ section.my-profile {
     display: block;
     border-top: 1px solid rgb(200,200,10);
     border-bottom: 1px solid rgb(200,200,10);
-    border-radius: 20px;
+    border-radius: 20px 0 20px 0;
 }
 .my-profile ul li {
     margin-left: 20px;
