@@ -319,7 +319,7 @@
 			"file": "slide/index.html",
 			"settings":
 			{
-				"buffer_size": 12933,
+				"buffer_size": 15408,
 				"line_ending": "Unix"
 			}
 		},
@@ -327,7 +327,7 @@
 			"file": "slide/public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 6700,
+				"buffer_size": 6990,
 				"line_ending": "Unix"
 			}
 		},
@@ -453,6 +453,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Technology Adoption",
+			"sta",
+			"stace",
 			"section",
 			"_slideDivBg",
 			"transition",
@@ -493,7 +496,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -502,15 +505,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12933,
+						"buffer_size": 15408,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12724,
-								12724
+								1782,
+								1782
 							]
 						],
 						"settings":
@@ -519,10 +522,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5469.0,
+						"translation.y": 131.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -531,15 +534,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6700,
+						"buffer_size": 6990,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3836,
-								3836
+								6288,
+								6288
 							]
 						],
 						"settings":
@@ -549,10 +552,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2102.0,
+						"translation.y": 3683.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -581,7 +584,7 @@
 						"translation.y": 1275.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

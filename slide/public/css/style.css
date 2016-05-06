@@ -5,6 +5,79 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+section.my-profile {
+    font-size: 18px;
+}
+#top-container,#bottom-container {
+    margin: 0 20px;
+    text-align: left;
+}
+#bottom-container {
+    clear: both;
+}
+.reveal .slides > section.my-profile img {
+    width: 28.5%;
+    float: right;
+    margin:20px;
+    box-shadow: 0 0 25px rgba(255,160,210,1);
+    border-radius: 5px;
+}
+.my-profile div#riwayat-pendidikan, .my-profile div#job-experience {
+    width: 550px;
+}
+.my-profile div#riwayat-pendidikan {
+    float: left;
+}
+.my-profile #bottom-container div#social-media {
+    float: right;
+    width: 280px;
+}
+.my-profile h3 {
+    font-size: 46px;
+}
+.my-profile ul {
+    margin: 0 0 20px 0;
+    padding: 10px 0 20px 0;
+    display: block;
+    border-top: 1px solid rgb(200,200,10);
+    border-bottom: 1px solid rgb(200,200,10);
+    border-radius: 20px;
+}
+.my-profile ul li {
+    margin-left: 20px;
+}
+.my-profile h5 {
+    font-size: 1.3em;
+    margin:0 0 10px 10px;
+    text-align: left;
+}
+.my-profile #job-experience {
+    float: left;
+}
+.my-profile ul.social-media li.twitter:before {
+    content: "\f081";
+}
+
+.my-profile ul.social-media li.google-plus:before {
+    content: "\f0d4";
+}
+
+.my-profile ul.social-media li.github:before {
+    content: "\f092";
+}
+
+.my-profile ul.social-media li.facebook:before {
+    content: "\f082";
+}
+.my-profile ul.social-media li.email:before {
+    content: "\f199";
+}
+.my-profile ul.rwp li.sd:before,.my-profile ul.rwp li.smp:before,.my-profile ul.rwp li.sma:before {
+    content: "\f1ae";
+}
+.my-profile ul.rwp li.pt:before {
+    content: "\f19d";
+}
 .reveal .slides section.present,.reveal .slides section.stacked-slide > .fragment.visible {
     background: -webkit-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
     background: -moz-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url("/public/images/cover-bg-small-blur.jpg");
@@ -235,4 +308,4 @@ p.item-note {
     background: none;
     box-shadow: none;
     border: none;
-}
+}   
