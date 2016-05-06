@@ -319,7 +319,7 @@
 			"file": "slide/index.html",
 			"settings":
 			{
-				"buffer_size": 15408,
+				"buffer_size": 15887,
 				"line_ending": "Unix"
 			}
 		},
@@ -327,7 +327,7 @@
 			"file": "slide/public/css/style.css",
 			"settings":
 			{
-				"buffer_size": 6990,
+				"buffer_size": 8251,
 				"line_ending": "Unix"
 			}
 		},
@@ -335,7 +335,7 @@
 			"file": "slide/public/slide.js",
 			"settings":
 			{
-				"buffer_size": 3577,
+				"buffer_size": 3697,
 				"line_ending": "Unix"
 			}
 		}
@@ -496,7 +496,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -505,15 +505,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15408,
+						"buffer_size": 15887,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1782,
-								1782
+								12677,
+								12677
 							]
 						],
 						"settings":
@@ -522,10 +522,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 131.0,
+						"translation.y": 5372.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -534,15 +534,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6990,
+						"buffer_size": 8251,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6288,
-								6288
+								687,
+								687
 							]
 						],
 						"settings":
@@ -552,10 +552,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3683.0,
+						"translation.y": 119.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -564,15 +564,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3577,
+						"buffer_size": 3697,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3329,
-								3329
+								3151,
+								3151
 							]
 						],
 						"settings":
@@ -581,10 +581,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1275.0,
+						"translation.y": 1122.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

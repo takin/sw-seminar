@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					return `background:-webkit-radial-gradient(center, circle cover, rgba(250,250,250,`+ centerGradient + `) 0%, rgba(20,20,20,`+ edgeGradient +`) 100%),url('` + imagePath.original + `');
 				   			background:-moz-radial-gradient(center, circle cover, rgba(250,250,250,`+ centerGradient + `) 0%, rgba(20,20,20,`+ edgeGradient +`) 100%),url('` + imagePath.original + `');
 				   			background-size:cover;background-repeat:no-repeat;`;
-				}(),
+				},
 				section: function() {
 					var originalSectionStyle = _section.element.getAttribute('style');
 					return originalSectionStyle + `background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,.6), rgba(255,255,255,.6)), url('` + imagePath.blur + `');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						    border-radius: 5px;
 						    box-shadow: 0 25px 37px rgba(10,20,30,1);
 						    padding-top: 0px;`;
-				}()
+				}
 			};
 		}
 
@@ -76,12 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
 				edgeGradient = _defEdgeGradient;
 			}
 
-			if ( _section.isContainClass('image-only') ) {
+			if ( _section.isContainClass('image-only')  || _section.isContainClass('full-image')) {
+
 			} else if ( _section.isContainClass('stacked-slide') ) {
 
 			}else {
-				bodyStyle = getStyle(bgImage, centerGradient, edgeGradient).body;
-				sectionStyle = getStyle(bgImage, centerGradient, edgeGradient).section;
+				bodyStyle = getStyle(bgImage, centerGradient, edgeGradient).body();
+				sectionStyle = getStyle(bgImage, centerGradient, edgeGradient).section();
 				_body.setAttribute('style', bodyStyle);
 				_section.element.setAttribute('style', sectionStyle);
 			}
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			case 4:
 				applyBackground('data-center-1.jpg',.2,.5);
 			break;
-			case 9:
+			case 10:
 				applyBackground('html-source.jpg');
 			break;
 			case 12:
