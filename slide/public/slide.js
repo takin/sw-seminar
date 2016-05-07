@@ -90,31 +90,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		var state = Reveal.getState();
 		switch( state.indexh ) {
-			case 4:
-				applyBackground('data-center-1.jpg',.2,.5);
-			break;
-			case 10:
-				applyBackground('html-source.jpg');
-			break;
-			case 12:
-				applyBackground('ai.jpg');
-			break;
-			case 25:
-			case 26:
-			case 27:
-			case 28:
-			case 29:
-			case 30:
-			case 31:
-			case 32:
-			case 33:
-			case 34:
-			case 35:
-				applyBackground('lod-cloud.png');
-			break;
-			default:
-				applyBackground();
-			break;
+			// case 4:
+			// 	applyBackground('data-center-1.jpg',.2,.5);
+			// break;
+			// case 10:
+			// 	applyBackground('html-source.jpg');
+			// break;
+			// case 12:
+			// 	applyBackground('ai.jpg');
+			// break;
+			// case 25:
+			// case 26:
+			// case 27:
+			// case 28:
+			// case 29:
+			// case 30:
+			// case 31:
+			// case 32:
+			// case 33:
+			// case 34:
+			// case 35:
+			// 	applyBackground('lod-cloud.png');
+			// break;
+			// default:
+			// 	applyBackground();
+			// break;
 		}
 	};
 
@@ -127,6 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		progress: false
 	});
 
-	Reveal.addEventListener('slidechanged', Slide);
+	// Reveal.addEventListener('slidechanged', Slide);
 
 });

@@ -309,3 +309,7 @@ p.item-note {
     box-shadow: none;
     border: none;
 }   
+
+.reveal .slides section.present {
+    background: rgb(255,255,255);
+}
